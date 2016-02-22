@@ -518,6 +518,8 @@ a:visited {
 .back2top .arrow img:hover{
     -webkit-filter: drop-shadow( -2px -4px 0px #000 );
     filter: drop-shadow( -2px -4px 0px #000 );
+    
+}
 
 @media (min-width: 768px) {
     
