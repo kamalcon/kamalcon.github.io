@@ -90,6 +90,7 @@ h2 {
 
 ul {
     list-style-image: url(images/lilcircle-01.svg);
+    padding: 0;
 }
 
 #profile {
@@ -103,9 +104,9 @@ ul {
     position: relative;
     width: 250px;
     height: 250px;
-    border-radius: 125px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
     background-size:contain;
     margin: auto;
 }
@@ -114,30 +115,52 @@ ul {
     position: absolute;
     width: 250px;
     height: 250px;
-    border-radius: 125px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
     margin: auto;
-    background-color: rgba(121, 210, 166,.9);
     opacity: 0;
+}
+
+.outercircle a:hover {
+    -webkit-transform: translate(-15px, -15px);
+    -moz-transform: translate(-15px, -15px);
+    -ms-transform: translate(-15px, -15px);
+    transform: translate(-15px, -15px);
+    background-color: rgba(121, 210, 166, .8);  
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .innercircle {
     position: absolute;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
     top: 50%;
     margin-top: -30.5px;
     color: black;
 }
 
+.appear {
+    display: block;
+    width: 250px;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .outerbox {
     position: relative;
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: auto;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 0;
 }
 .innerbox {
     position: relative; 
@@ -147,16 +170,16 @@ ul {
 }
 
 .disappear {
-    display: block;
+    display: none;
 }
 
 .popout {
     position: absolute;
     width: 250px;
     height: 250px;
-    border-radius: 125px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
     margin: auto;
     background-color: rgba(121, 210, 166,1);
     opacity: 0;
@@ -173,16 +196,8 @@ ul {
     margin-top: -30px;
 }
     
-
-.outercircle a:hover {
-    -webkit-transform: translate(-15px, -15px);
-    -moz-transform: translate(-15px, -15px);
-    -ms-transform: translate(-15px, -15px);
-    transform: translate(-15px, -15px);
-    opacity: 1;
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
+.expad {
+    padding-bottom: 20px;
 }
 
 
@@ -521,19 +536,25 @@ a:visited {
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     
     .bg {
     animation-duration: 60s;
-}
+    }
     
     .disappear {
         display: block;
-}
-
-    
+    }
     .outerbox {
-        height: 250px;
+        height: 300px;
         padding-top: 20px;
-}
+        
+    }
+    .expad {
+        padding-bottom: 0px;
+    }
+    .appear {
+        display: none;
+    }
+    
 }
