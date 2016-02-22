@@ -1,0 +1,537 @@
+body {
+    font-family: futura, 'Montserrat', sans-serif;
+    background-repeat: repeat;
+    animation-name: changecolor;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-position: fixed;
+    color: white;
+}
+
+.bg { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/stars.png);
+    background-repeat: repeat;
+    animation-name: growing;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.welcome {
+    background-image: url(images/stars.png), -webkit-linear-gradient(rgba(13,0,25,1), rgba(13,0,26,.9), rgba(13,0,26,0)); /*For Safari 5.1-6.0 */
+    background-image: url(images/stars.png), -o-linear-gradient(rgba(13,0,25,1), rgba(13,0,26,.9), rgba(13,0,26,0)); /* For Opera 11.1 to 12.0 */
+    background-image: url(images/stars.png), -moz-linear-gradient(rgba(13,0,25,1), rgba(13,0,26,.9), rgba(13,0,26,0)); /* For Firefox 3.6 to 15 */
+    background-image: url(images/stars.png), linear-gradient(rgba(13,0,25,1), rgba(13,0,26,.9), rgba(13,0,26,0)); /* Standard syntax */
+    background-repeat: repeat-x;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 60;
+    animation-name: pop-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    -webkit-transform: translate(0,100%);
+    -moz-transform: translate(0,100%);
+    -o-transform: translate(0,100%);
+    transform: translate(0,100%);
+    animation-timing-function: cubic-bezier(.69,.02,1,0)
+}
+
+.welcome div {
+    position: absolute;
+    margin: auto;
+    height: 600px;
+    width: 100%;
+}
+
+.welcome p {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -71px;
+    text-align: center;
+    left: 50%;
+    margin-left: -222px;
+}
+
+.header {
+    display: block;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 10;
+}
+
+.padded {
+    padding-top: 150px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.col-md-4, .col-md-6, .col-md-2, .col-md-3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-image: url(images/lilcircle-01.svg);
+}
+
+#profile {
+    background-image: url(images/me.jpg);
+    background-color: none;
+    background-position: center;
+    background-size: contain;
+}
+
+.outercircle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+    background-size:contain;
+    margin: auto;
+}
+
+.outercircle a {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+    margin: auto;
+    background-color: rgba(121, 210, 166,.9);
+    opacity: 0;
+}
+
+.innercircle {
+    position: absolute;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 50%;
+    margin-top: -30.5px;
+    color: black;
+}
+
+.outerbox {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+}
+.innerbox {
+    position: relative; 
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.disappear {
+    display: block;
+}
+
+.popout {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+    margin: auto;
+    background-color: rgba(121, 210, 166,1);
+    opacity: 0;
+    animation: appear;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.popout div {
+    margin-top: -30px;
+}
+    
+
+.outercircle a:hover {
+    -webkit-transform: translate(-15px, -15px);
+    -moz-transform: translate(-15px, -15px);
+    -ms-transform: translate(-15px, -15px);
+    transform: translate(-15px, -15px);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+@keyframes appear {
+    
+    from {
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate(-15px, -15px);
+        -moz-transform: translate(-15px, -15px);
+        -ms-transform: translate(-15px, -15px);
+        transform: translate(-15px, -15px);
+    }
+    
+    0% {
+        opacity: 0
+    }
+    
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes pop-in {
+    
+    from {
+        transform: translateY(0);
+}
+
+    to {
+        transform : translateY(-200%);
+    }
+}
+
+@keyframes growing {
+    
+    0% {
+        background-position: left;
+    }
+    
+    100% {
+        background-position: right;
+    }
+}
+
+@keyframes changecolor {
+    
+    0% {
+        background-color: #0d001a;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes fade {
+    
+    from {
+        transform: translateY(5%);
+}
+
+    to {
+        transform : translateY(40%);
+    }
+}
+
+p {
+    display: inline;
+    margin: 0px;
+}
+
+h4 {
+    display: inline;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: #79d2a6;
+}
+    
+a:hover {
+    text-decoration: overline underline;
+    color: white;
+}
+    
+    
+a:visited {
+    color: #39ac73;
+}
+
+#uvav {
+    background-image: url("images/1.gif");
+}
+
+#ketch {
+    background-image: url("images/ketch.jpg");
+}
+
+#patterns {
+    background-image: url("images/stonedstripes.jpg");
+    background-size: 50%;
+}
+
+#aligor {
+    background-image: url("images/aligor.svg");
+    background-size: 200%;
+    background-position: center;
+    background-color: black;
+}
+
+#cloths {
+    background-image: url("images/clothsq.jpg");
+}
+
+#rld {
+    background-image: url("images/rldsq.jpg");
+}
+
+.navigation a {
+    color: black;
+    font-weight: 900;
+}
+
+.navigation a:hover {
+    color: #79d2a6;
+}
+
+.navigation .col-md-2 {
+    position: fixed;
+    z-index: 10;
+    color: black;
+    background-color: #f2f2f2;
+    height: 100%;
+    opacity: .7;
+}
+
+#hilite {
+    background-color: black;
+    color: white;
+}
+
+.pattern {
+    width:100%;
+    background-attachment:fixed;
+    height:900px;
+    color: black;
+}
+
+#pattern1 {
+    background-image: url(/images/newstripe2.png);
+}
+#pattern2 {
+    background-image: url(/images/olstripey.gif);
+}
+#pattern3 {
+    background-image: url(/images/margarita.jpg);
+}
+#pattern4 {
+    background-image: url(/images/fakeapple.jpg);
+}
+#pattern5 {
+    background-image: url(/images/bark.jpg);
+}
+#pattern6 {
+    background-image: url(/images/stonedstripes.jpg);
+}
+#pattern7 {
+    background-image: url(/images/spaceburn3.jpg);
+}
+#pattern8 {
+    background-image: url(/images/newsquib.jpg);
+}
+#pattern9 {
+    background-image: url(/images/longdiv.jpg);
+}
+#pattern10 {
+    background-image: url(images/wizardstuff.jpg);
+    background-size: 40%;
+}
+
+#ketch0, #ketch1, #ketch2, #ketch3, #cloths1, #cloths2, #rld1, #rld2, #rld3 {
+    background-size: cover;
+    background-position: center;
+}
+
+#ketch0 {
+    background-image: url(images/cards2.jpg);
+}
+
+#ketch1 {
+    background-image: url(images/cards3.jpg);
+}
+
+#ketch2 {
+    background-image: url(images/cards4.jpg);
+}
+
+#ketch3 {
+    background-image: url(images/cards5.jpg);
+}
+
+#aligor1, #big, #bigger, #biggest, #biggest2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#aligor1 {
+    background-image: url(images/aligor.svg);
+    background-size: contain;
+}
+
+#big {
+    background-image: url(images/aligor.svg);
+    background-size: 90%;
+}
+
+#bigger {
+    background-image: url(images/aligor.svg);
+    background-size: 150%;
+}
+
+#biggest {
+    background-image: url(images/aligor.svg);
+    background-size: 220%;
+}
+
+#biggest2 {
+    background-image: url(images/aligor.svg);
+    background-size: 300%;
+}
+
+#cloths1 {
+    background-image: url(images/cloth1.jpg);
+}
+
+#cloths2 {
+    background-image: url(images/cloth2.jpg);
+}
+
+#rld1 {
+    background-image: url(images/RLD1.jpg);
+}
+
+#rld2 {
+    background-image: url(images/rld2.jpg);
+}
+
+#rld3 {
+    background-image: url(images/rld3.jpg);
+}
+
+.arrow {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    margin-left: -30px;
+    height: 25px;
+    width: 60px;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0, .58, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.arrow img {
+    height: 25px;
+    width: 60px;
+}
+
+.arrow p {
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    margin-left: 50%;
+    left: -16.5px;
+    font-size: 1em;
+}
+
+#footer {
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+    z-index: 8;
+}
+
+.back2top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    left: -40px;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.back2top .arrow {
+    position: absolute;
+    bottom: 45px;
+}
+
+.back2top .arrow p {
+    position: absolute;
+    top: 25px;
+    left: -10px;
+    color: #39ac73;
+}
+
+.back2top .arrow img {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.back2top .arrow p:hover {
+    color: black;
+}
+
+.back2top .arrow img:hover{
+    -webkit-filter: drop-shadow( -2px -4px 0px #000 );
+    filter: drop-shadow( -2px -4px 0px #000 );
+
+@media (min-width: 768px) {
+    
+    .bg {
+    animation-duration: 60s;
+}
+    
+    .disappear {
+        display: block;
+}
+
+    
+    .outerbox {
+        height: 250px;
+        padding-top: 20px;
+}
+}
