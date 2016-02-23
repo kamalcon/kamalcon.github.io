@@ -59,13 +59,13 @@ body {
 }
 
 .welcome p {
-    font-size: 100px;
+    font-size: 50px;
     position: absolute;
     top: 50%;
     margin-top: -71px;
     text-align: center;
     left: 50%;
-    margin-left: -222px;
+    margin-left: -100px;
 }
 
 .header {
@@ -606,4 +606,8 @@ a:visited {
     #ketch4 {
         display: block;
     }
+    .welcome p {
+    font-size: 100px;
+    margin-left: -222px;
+}
 }
