@@ -451,14 +451,9 @@ a:visited {
     background-size: 150%;
 }
 
-#biggest {
-    background-image: url(images/aligor.svg);
-    background-size: 220%;
-}
-
 #biggest2 {
     background-image: url(images/aligor.svg);
-    background-size: 350%;
+    background-size: 300%;
 }
 
 #cloths1 {
