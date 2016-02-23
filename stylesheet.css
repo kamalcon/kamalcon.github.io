@@ -367,37 +367,44 @@ a:visited {
 }
 
 #pattern1 {
-    background-size: auto;
-    background-repeat: repeat;
     background-image: url(/images/newstripe2.png);
+    background-size: 70%;
 }
 #pattern2 {
     background-image: url(/images/olstripey.gif);
+    background-size: 100%;
 }
 #pattern3 {
     background-image: url(/images/margarita.jpg);
+    background-size: 90%;
 }
 #pattern4 {
     background-image: url(/images/fakeapple.jpg);
+    background-size: 100%;
 }
 #pattern5 {
     background-image: url(/images/bark.jpg);
+    background-size: 90%;
 }
 #pattern6 {
     background-image: url(/images/stonedstripes.jpg);
+    background-size: 70%;
 }
 #pattern7 {
     background-image: url(/images/spaceburn3.jpg);
+    background-size: 100%;
 }
 #pattern8 {
     background-image: url(/images/newsquib.jpg);
+    background-size: 60%;
 }
 #pattern9 {
     background-image: url(/images/longdiv.jpg);
+    background-size: 100%;
 }
 #pattern10 {
     background-image: url(images/wizardstuff.jpg);
-    background-size: 40%;
+    background-size: 70%;
 }
 
 #ketch0, #ketch1, #ketch2, #ketch3, #cloths1, #cloths2, #rld1, #rld2, #rld3 {
@@ -607,7 +614,38 @@ a:visited {
         display: block;
     }
     .welcome p {
-    font-size: 100px;
-    margin-left: -222px;
-}
+        font-size: 100px;
+        margin-left: -222px;
+    }
+    #pattern1 {
+        background-image: url(/images/newstripe2.png);
+    }
+    #pattern2 {
+        background-image: url(/images/olstripey.gif);
+    }
+    #pattern3 {
+        background-image: url(/images/margarita.jpg);
+    }
+    #pattern4 {
+        background-image: url(/images/fakeapple.jpg);
+    }
+    #pattern5 {
+        background-image: url(/images/bark.jpg);
+    }
+    #pattern6 {
+        background-image: url(/images/stonedstripes.jpg);
+    }
+    #pattern7 {
+        background-image: url(/images/spaceburn3.jpg);
+    }
+    #pattern8 {
+        background-image: url(/images/newsquib.jpg);
+    }
+    #pattern9 {
+        background-image: url(/images/longdiv.jpg);
+    }
+    #pattern10 {
+        background-image: url(images/wizardstuff.jpg);
+        background-size: 40%;
+    }
 }
