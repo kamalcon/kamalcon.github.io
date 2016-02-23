@@ -10,6 +10,11 @@ body {
     color: white;
 }
 
+.black {
+    animation-name: none;
+    background-color: black;
+}
+
 .bg { 
     position: fixed;
     width: 100%;
@@ -140,6 +145,8 @@ ul {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
     top: 50%;
     margin-top: -30.5px;
     color: black;
@@ -155,9 +162,15 @@ ul {
     padding-right: 5%;
 }
 
+.appear2 {
+    display: inline;
+    font-size: x-small;
+    margin-top: 10px;
+}
+
 .outerbox {
     position: relative;
-    width: 300px;
+    width: 325px;
     height: auto;
     margin: auto;
     padding-top: 0;
@@ -166,7 +179,6 @@ ul {
     position: relative; 
     color: white;
     padding-left: 5%;
-    padding-right: 5%;
 }
 
 .disappear {
@@ -193,7 +205,7 @@ ul {
 }
 
 .popout div {
-    margin-top: -30px;
+    margin-top: -58px;
 }
     
 .expad {
@@ -327,6 +339,10 @@ a:visited {
     font-weight: 900;
 }
 
+.white a, p {
+    color: white;
+}
+
 .navigation a:hover {
     color: #79d2a6;
 }
@@ -335,9 +351,8 @@ a:visited {
     position: fixed;
     z-index: 10;
     color: black;
-    background-color: #f2f2f2;
-    height: 100%;
-    opacity: .7;
+    opacity: 1;
+    min-width: 230px;
 }
 
 #hilite {
@@ -346,13 +361,14 @@ a:visited {
 }
 
 .pattern {
-    width:100%;
-    background-attachment:fixed;
-    height:900px;
+    width: 100%;
+    height: 500px;
     color: black;
 }
 
 #pattern1 {
+    background-size: auto;
+    background-repeat: repeat;
     background-image: url(/images/newstripe2.png);
 }
 #pattern2 {
@@ -385,8 +401,9 @@ a:visited {
 }
 
 #ketch0, #ketch1, #ketch2, #ketch3, #cloths1, #cloths2, #rld1, #rld2, #rld3 {
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #ketch0 {
@@ -405,10 +422,18 @@ a:visited {
     background-image: url(images/cards5.jpg);
 }
 
+#ketch4 {
+    background-image: url(images/cards6.jpg);
+    background-position: right;
+    display: none;
+}
+
 #aligor1, #big, #bigger, #biggest, #biggest2 {
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #aligor1 {
@@ -418,7 +443,7 @@ a:visited {
 
 #big {
     background-image: url(images/aligor.svg);
-    background-size: 90%;
+    background-size: cover;
 }
 
 #bigger {
@@ -433,7 +458,7 @@ a:visited {
 
 #biggest2 {
     background-image: url(images/aligor.svg);
-    background-size: 300%;
+    background-size: 350%;
 }
 
 #cloths1 {
@@ -553,8 +578,37 @@ a:visited {
     .expad {
         padding-bottom: 0px;
     }
-    .appear {
+    .appear, .appear2 {
         display: none;
     }
+    .navigation .col-md-2 {
+        background-color: #f2f2f2;
+        height: 100%;
+        opacity: .7;
+    }
+    .pattern {
+        height: 900px;
+        background-attachment: fixed;
+        margin: 0px;
+    }
     
+    #ketch0, #ketch1, #ketch2, #ketch3, #cloths1, #cloths2, #rld1, #rld2, #rld3 {
+    background-size: cover;
+    }
+    
+    .white a, p {
+    color: inherit;
+    }
+    
+    #aligor1, #big, #bigger, #biggest, #biggest2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+    
+    #ketch4 {
+        display: block;
+    }
 }
