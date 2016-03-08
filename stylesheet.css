@@ -649,30 +649,39 @@ a:visited {
     }
     #pattern1 {
         background-image: url(/images/newstripe2.png);
+        background-size: auto;
     }
     #pattern2 {
         background-image: url(/images/olstripey.gif);
+        background-size: auto;
     }
     #pattern3 {
         background-image: url(/images/margarita.jpg);
+        background-size: auto;
     }
     #pattern4 {
         background-image: url(/images/fakeapple.jpg);
+        background-size: auto;
     }
     #pattern5 {
         background-image: url(/images/bark.jpg);
+        background-size: auto;
     }
     #pattern6 {
         background-image: url(/images/stonedstripes.jpg);
+        background-size: auto;
     }
     #pattern7 {
         background-image: url(/images/spaceburn3.jpg);
+        background-size: auto;
     }
     #pattern8 {
         background-image: url(/images/newsquib.jpg);
+        background-size: auto;
     }
     #pattern9 {
         background-image: url(/images/longdiv.jpg);
+        background-size: auto;
     }
     #pattern10 {
         background-image: url(images/wizardstuff.jpg);
