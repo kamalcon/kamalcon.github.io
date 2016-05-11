@@ -69,10 +69,61 @@ body {
 }
 
 .header {
-    display: block;
+    width: 90%;
     margin-bottom: 50px;
     position: fixed;
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background-color: white;
+    position: absolute;
+    float: right;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    right: 5%;
+    top: 20px;
+}
+
+.button a {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    opacity: 0;
+}
+
+.button p {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    margin: auto;
+    top: 50%;
+    margin-top:-10px;
+    color: black;
+}
+.button a:hover {
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    background-color: rgba(121, 210, 166, .8);  
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.innerbutton {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    margin: auto;
+    top: 50%;
+    margin-top:-10px;
+    color: black;
 }
 
 .padded {
