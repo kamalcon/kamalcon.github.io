@@ -76,6 +76,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .buybutton {
     background-color: white;
     position: absolute;
@@ -83,7 +84,7 @@ body {
     display: inline-block;
     width: 80px;
     height: 40px;
-    right: 5%;
+    right: 10%;
     top: 20px;
 }
 
@@ -104,6 +105,7 @@ body {
     margin-top:-10px;
     color: black;
 }
+
 .buybutton a:hover {
     -webkit-transform: translate(-10px, -10px);
     -moz-transform: translate(-10px, -10px);
