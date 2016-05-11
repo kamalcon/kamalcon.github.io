@@ -76,7 +76,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.button {
+.buybutton {
     background-color: white;
     position: absolute;
     float: right;
@@ -87,7 +87,7 @@ body {
     top: 20px;
 }
 
-.button a {
+.buybutton a {
     position: absolute;
     width: 80px;
     height: 40px;
@@ -95,7 +95,7 @@ body {
     opacity: 0;
 }
 
-.button p {
+.buybutton p {
     position: absolute;
     text-align: center;
     width: 80px;
@@ -104,7 +104,7 @@ body {
     margin-top:-10px;
     color: black;
 }
-.button a:hover {
+.buybutton a:hover {
     -webkit-transform: translate(-10px, -10px);
     -moz-transform: translate(-10px, -10px);
     -ms-transform: translate(-10px, -10px);
